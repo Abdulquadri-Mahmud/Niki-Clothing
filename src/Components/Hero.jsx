@@ -66,7 +66,7 @@ export default function Hero() {
                 <Flex justifyContent={'center'} alignItems={'center'} height={'100%'} width={'full'}>
                     <Box width={{md: '50%', base: '95%'}}>
                         <Heading textAlign={'center'} pb={4} fontWeight={500} fontSize={{md: 30, base: 25}} color={'blue.500'}>BEST OFFER</Heading>
-                        <Heading textAlign={'center'} pb={4}  fontWeight={500} fontSize={{md: 50, base: 30}} color={'white'}>NEW ARRIVAL ON SALE</Heading>
+                        <Heading textAlign={'center'} pb={4}  fontWeight={500} fontSize={{md: 50, base: 30}} color={'white'}>NIKI'S COLLECTIONS</Heading>
                         <Text textAlign={'center'} color={'white'} fontSize={14}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aut qui, deleniti asperiores dicta placeat quos animi rem quae quasi, officiis, ad non! Error, aliquam vero sint vitae dolor incidunt.</Text>
                         <Flex justifyContent={'center'} mt={6} gap={5} width={'100%'}>
                             <Button rounded={3} bg={'blue.500'} color={'white'}>Shop Now</Button>
