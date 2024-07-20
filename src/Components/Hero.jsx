@@ -1,9 +1,10 @@
 import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
 
-import bg1 from '/bg1.jpg';
+import bg1 from '/bg5.png';
 import bg2 from '/bg2.jpg';
 import bg3 from '/bg3.jpg';
+import bg4 from '/bg4.jpg';
 
 import Header from './Header';
 
@@ -74,7 +75,7 @@ export default function Hero() {
                     </Box>
                 </Flex>
             </Flex>
-            <Flex justifyContent={'center'} alignItems={'center'} height={{md:'90vh', base: '100vh'}} bgImg={`url(${bg2})`} bgPos={'center'} bgSize={'cover'} bgRepeat={'no-repeat'} className='blendmode'>
+            <Flex justifyContent={'center'} alignItems={'center'} height={{md:'90vh', base: '100vh'}} bgImg={`url(${bg4})`} bgPos={'center'} bgSize={'cover'} bgRepeat={'no-repeat'} className='blendmode'>
                 <Flex justifyContent={'center'} alignItems={'center'} height={'100%'} width={'full'}>
                     <Box width={{md: '50%', base: '95%'}}>
                         <Heading textAlign={'center'} pb={4} fontWeight={500} fontSize={{md: 30, base: 25}} color={'blue.500'}>BEST OFFER</Heading>
