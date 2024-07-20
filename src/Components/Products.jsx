@@ -1,21 +1,25 @@
 import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react'
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom';
-import { IoStar } from "react-icons/io5";
-import { ProductsContext } from '../pages/Home';
+import { IoStar } from 'react-icons/io5'
+import { ProductsContext } from '../pages/OurProducts';
 
-export default function LatestProduct() {
+export default function Products() {
   const products = useContext(ProductsContext);
 
   return (
-    <Box maxW={{'2xl': '80%',md: '100%', base: '97%'}} mx={'auto'} my={'10vh'} px={{md: 5, base: 3}}>
-      <Flex alignItems={{md: 'center', base: 'start'}} justifyContent={'space-between'} 
-      flexDir={{md: 'row', base: 'column'}} borderBottomWidth={2} borderColor={'gray.600'}
-      pb={5}>
-        <Heading fontWeight={500} fontSize={28}>Latest Products</Heading>
-        <Link to={'products'} className='font-medium text-sm pl-5 text-blue-500'>View All Products {'>'}</Link>
-      </Flex>
-      <Flex justifyContent={'center'} gap={5} flexWrap={'wrap'} mt={10}>
+    <Box mt={'10vh'}>
+        <Flex justifyContent={'center'} gap={4}>
+            <Box>
+                <Text fontWeight={500} fontSize={14} color={'blue.500'} _hover={{color: 'blue.500'}}>ALL PRODUCTS</Text>
+            </Box>
+            <Box>
+                <Text fontWeight={500} fontSize={14} _hover={{color: 'blue.500'}}>FEATURED</Text>
+            </Box>
+            <Box>
+                <Text fontWeight={500} fontSize={14} _hover={{color: 'blue.500'}}>FLASH DEALS</Text>
+            </Box>
+        </Flex>
+    <Flex justifyContent={'center'} gap={5} flexWrap={'wrap'} mt={10}>
         {
           products.map((pro) => (
             <Box width={{md: '300px', base: '350px'}} rounded={5} color={'white'} className='bg-slate-800 shadow-lg'>

@@ -7,12 +7,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 export default function OurBackground() {
   return (
-    <Box maxW={{md: '90%', base: '97%'}} mx={'auto'} mb={'10vh'} px={{md: 5, base: 3}}>
+    <Box maxW={{md: '90%', base: '97%'}} mx={'auto'} mb={'5vh'} px={{md: 5, base: 3}}>
         <Box textAlign={'center'} borderBottomWidth={2} borderColor={'gray.600'} pb={5}>
             <Heading textAlign={'start'} fontWeight={400} fontSize={28}>Our Background</Heading>
         </Box>
         <Flex justifyContent={'space-around'} alignItems={'center'} flexWrap={'wrap'} mt={14}>
-          <Box width={{md: '45%', base: '100%'}} mt={{md: 0, base: 8}}>
+          <Box width={{md: '45%', base: '100%'}} mt={{md: 0, base: 0}}>
             <Image width={'100%'} src='/bg1.jpg'/>
           </Box>
           <Box width={{md: '46%', base: '100%'}}>
